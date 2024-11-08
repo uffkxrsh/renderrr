@@ -1,0 +1,154 @@
+/* auth.css */
+
+/* General page layout for authentication */
+.auth-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9; /* Light background */
+}
+
+/* Main authentication container */
+.auth-container {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left pane for logo or illustration */
+.auth-left-pane {
+    flex: 1;
+    background: url('path/to/your-image.png') center/cover no-repeat;
+    /* Replace with logo or any visual background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-left-pane img {
+    max-width: 80%;
+    height: auto;
+}
+
+/* Right pane for login/signup form */
+.auth-right-pane {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Tab selector styling */
+.auth-tabs .tab-selector {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.auth-tabs .tab-selector button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s, border-bottom 0.2s;
+}
+
+.auth-tabs .tab-selector button.active {
+    color: #0073e6; /* Accent color */
+    border-bottom: 2px solid #0073e6;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-field:focus {
+    border-color: #0073e6;
+}
+
+/* Checkbox and options */
+.login-options, .terms-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.login-options label, .terms-checkbox label {
+    cursor: pointer;
+}
+
+.login-options a, .terms-checkbox a {
+    color: #0073e6;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-options a:hover, .terms-checkbox a:hover {
+    color: #005bb5;
+}
+
+/* Submit button styling */
+.submit-button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #005bb5;
+}
+
+/* Error message styling */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.oauth-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.oauth-button.google {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.oauth-button.google:hover {
+    background-color: #357ae8;
+}
